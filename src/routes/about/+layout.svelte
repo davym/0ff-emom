@@ -6,7 +6,7 @@
 
 <header>
 	<ButtonSection isFixedSize={true}>
-		<a href="/" on:click={navigateBack}>
+		<a href="/" on:click={navigateBack} aria-label="Navigate back">
 			<CaretLeft height="37.5%" />
 		</a>
 	</ButtonSection>
