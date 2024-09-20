@@ -4,20 +4,28 @@
 	let minutes: number | null;
 	let seconds: number | null;
 	let rounds: number | null;
+	let form: HTMLFormElement;
 
 	$: totalSeconds = (seconds || 0) + (minutes || 0) * 60;
 
 	const handleSubmit = (e: SubmitEvent): void => {
 		e.preventDefault();
+
 		onSubmit();
+
 		goto(`/${totalSeconds}/${rounds}/0`);
+
 		minutes = null;
 		seconds = null;
 		rounds = null;
+
+		if (form) {
+			form.reset();
+		}
 	};
 </script>
 
-<form class="ntf" on:submit={handleSubmit}>
+<form class="ntf" on:submit={handleSubmit} bind:this={form}>
 	<fieldset class="ntf__fieldset">
 		<legend class="ntf__legend">
 			<label class="ntf__label" for="minutes"><abbr title="Minutes">MM</abbr></label>:<label
