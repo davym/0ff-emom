@@ -28,8 +28,8 @@
 				<abbr title="Every minute on the minute">EMoM</abbr> stands for
 				<em>
 					<b><u>e</u></b>very <b><u>m</u></b>inute <b><u>o</u></b>n the <b><u>m</u></b>inute
-				</em>. It is a simple interval timing sheme with a variety of uses. It‘s not bloated with
-				features like variable interval lengths or labels, that just make things complicated and
+				</em>. It is a simple interval timing protocol with a variety of uses. It‘s not bloated with
+				features like variable interval lengths or labels that just make things complicated and
 				slow. You simply pick the length of your interval and how many times you want it to repeat
 				and go!
 			</p>
