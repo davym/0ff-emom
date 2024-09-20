@@ -55,34 +55,6 @@
 </div>
 
 <style>
-	@keyframes -global-colorCycle {
-		0% {
-			color: var(--color-accent-primary);
-			filter: drop-shadow(0 0 1em currentColor);
-		}
-		16.5% {
-			color: var(--color-medium);
-		}
-		33% {
-			color: var(--color-accent-secondary);
-			filter: drop-shadow(0 0 1em currentColor);
-		}
-		49.5% {
-			color: var(--color-medium);
-		}
-		66% {
-			color: var(--color-accent-tertiary);
-			filter: drop-shadow(0 0 1em currentColor);
-		}
-		83% {
-			color: var(--color-medium);
-		}
-		100% {
-			color: var(--color-accent-primary);
-			filter: drop-shadow(0 0 1em currentColor);
-		}
-	}
-
 	.sb {
 		position: fixed;
 		left: 0;
@@ -122,14 +94,11 @@
 			align-items: center;
 			gap: 0.375rem;
 			height: 100%;
-			transition:
-				color 0.2s ease-out,
-				filter 0.2s ease-out;
+			transition: color 0.2s ease-out;
 
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
 					color: var(--color-accent-primary);
-					animation: colorCycle 6s ease-in-out infinite 3s;
 				}
 			}
 		}
