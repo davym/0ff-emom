@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://emom.0ff.dev/sitemap.xml
