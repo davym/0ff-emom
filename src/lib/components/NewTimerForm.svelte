@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	export let onSubmit: Function = () => {};
-	let minutes: number;
-	let seconds: number;
-	let rounds: number;
-	let form: HTMLFormElement;
+	let minutes: number | null;
+	let seconds: number | null;
+	let rounds: number | null;
 
 	$: totalSeconds = (seconds || 0) + (minutes || 0) * 60;
 
@@ -12,13 +11,13 @@
 		e.preventDefault();
 		onSubmit();
 		goto(`/${totalSeconds}/${rounds}/0`);
-		if (form) {
-			form.reset();
-		}
+		minutes = null;
+		seconds = null;
+		rounds = null;
 	};
 </script>
 
-<form class="ntf" on:submit={handleSubmit} bind:this={form}>
+<form class="ntf" on:submit={handleSubmit}>
 	<fieldset class="ntf__fieldset">
 		<legend class="ntf__legend">
 			<label class="ntf__label" for="minutes"><abbr title="Minutes">MM</abbr></label>:<label
