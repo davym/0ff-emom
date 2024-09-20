@@ -64,7 +64,7 @@
 	$: formattedElapsedTime = getFormattedTime(totalTime - time);
 	$: formattedRemainingTime = `-${getFormattedTime(time)}`;
 	$: timerArray = getTimeArray(roundTime);
-	$: offset = `-${roundTime < 600 ? (roundTime < 60 ? (roundTime < 10 ? 1.835 : 1.335) : 0.5) : 0}ch`;
+	$: offset = `-${isFinished ? 2.26 : roundTime < 600 ? (roundTime < 60 ? (roundTime < 10 ? 1.835 : 1.335) : 0.5) : 0}ch`;
 	$: isFinished = time < 1;
 	$: isFavorited = favoriteTimers.some(
 		(timer) => timer.seconds === seconds && timer.rounds === rounds
@@ -230,7 +230,7 @@
 		</div>
 		<button
 			class="screen"
-			style="transform: translateX({offset})"
+			style="transform: translateX({offset});{isFinished ? ' align-self: center;' : ''}"
 			aria-hidden="true"
 			on:click={time <= 0 ? resetTimer : toggleTimer}
 		>

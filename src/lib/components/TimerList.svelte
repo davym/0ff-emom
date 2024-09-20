@@ -27,7 +27,7 @@
 				</li>
 			{/each}
 		{:else}
-			<li class="tl__list-item tl__list-item--padded">No timers yet</li>
+			<li class="tl__list-item tl__list-item--padded">No timers yet :(</li>
 		{/if}
 	</ul>
 </div>

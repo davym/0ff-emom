@@ -18,7 +18,7 @@
 		<div class="content slim">
 			<div class="prose">
 				<h1>
-					<Hourglass height="0.75lh" />
+					<Hourglass height="1em" />
 					<abbr title="Every Minute on the Minute">EMoM</abbr>
 				</h1>
 				<p class="tagline">
@@ -71,17 +71,33 @@
 		line-height: 1;
 		font-size: 4rem;
 		text-align: center;
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		gap: 0.5rem;
+		transform: rotate(3deg);
+		background: var(--color-fg);
+		color: var(--color-bg);
+		position: relative;
+		z-index: 2;
+		padding: 0.25rem 1rem;
+		/* margin-block-start: 15vh; */
+
+		& svg {
+			background: var(--color-accent-primary);
+			padding: 0.5rem;
+			margin: -1rem 0 0 -2.5rem;
+			transform: rotate(-8deg);
+		}
 	}
 
 	.tagline {
-		margin-block-start: 0.5em;
+		margin-block-start: 0.25rem;
 		line-height: 1.9;
 		text-wrap: balance;
 		transform: skew(0, -1.5deg);
+		position: relative;
+		z-index: 1;
 
 		& > a {
 			background: var(--color-accent-primary);
