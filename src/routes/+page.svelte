@@ -69,7 +69,7 @@
 <style>
 	h1 {
 		line-height: 1;
-		font-size: 4rem;
+		font-size: clamp(3rem, 2.286rem + 3.57vw, 4rem);
 		text-align: center;
 		display: inline-flex;
 		justify-content: center;
@@ -81,7 +81,6 @@
 		position: relative;
 		z-index: 2;
 		padding: 0.25rem 1rem;
-		/* margin-block-start: 15vh; */
 
 		& svg {
 			background: var(--color-accent-primary);
@@ -115,6 +114,7 @@
 
 	.prose {
 		text-align: center;
+		padding-block: 5vh;
 	}
 
 	@keyframes -global-colorCycle {

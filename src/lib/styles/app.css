@@ -126,20 +126,16 @@ a {
 
 .container {
 	position: relative;
-
-	@media screen and (min-width: 768px) {
-		padding-block-end: var(--grid-size);
-	}
 }
 
 .content {
 	width: 100%;
 	max-width: 90rem;
 	margin: auto;
-	padding: calc(var(--grid-size) + 1rem) 1rem 1rem;
+	padding: calc(var(--grid-size) + 1rem) 1rem;
 
 	@media screen and (min-width: 768px) {
-		padding: calc(var(--grid-size) + 2rem) 2rem 2rem;
+		padding: calc(var(--grid-size) + 2rem) 2rem;
 	}
 }
 
