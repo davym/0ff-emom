@@ -218,7 +218,7 @@
 	{/if}
 
 	<div class="timer" aria-label={formattedRoundTime}>
-		<div class={isFinished ? 'visually-hidden' : 'rounds'}>
+		<div class={isFinished ? 'rounds visually-hidden' : 'rounds'}>
 			<div class="label">Round</div>
 			<p>
 				{#if currentRound === rounds}
@@ -230,7 +230,7 @@
 		</div>
 		<button
 			class="screen"
-			style="transform: translateX({offset});{isFinished ? ' align-self: center;' : ''}"
+			style="transform: translateX({offset})"
 			aria-hidden="true"
 			on:click={time <= 0 ? resetTimer : toggleTimer}
 		>
@@ -269,7 +269,7 @@
 			{/each}
 		</button>
 
-		<div class={isFinished ? 'visually-hidden' : 'times'}>
+		<div class={isFinished ? 'rounds visually-hidden' : 'times'}>
 			<button on:click={() => (isElapsedDisplayed = !isElapsedDisplayed)} class="time-type">
 				{isElapsedDisplayed ? formattedElapsedTime : formattedRemainingTime}
 				<div class="label">{isElapsedDisplayed ? 'elapsed' : 'remaining'}</div>
