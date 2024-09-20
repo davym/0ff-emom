@@ -112,7 +112,7 @@
 	</p>
 	<p>
 		Plausible is an <em>extremely</em> basic web traffic analytics application that only collects
-		100% annonymous website usage data like page visits, session, duration, etc. It is not
+		100% anonymous website usage data like page visits, session, duration, etc. It is not
 		<a href="https://plausible.io/vs-google-analytics" target="_blank" rel="noopener noreferrer"
 			>Google Analytics that tracks literally everything about you</a
 		>, and is borderline illegal in many countries.
