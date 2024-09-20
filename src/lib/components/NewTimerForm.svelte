@@ -95,6 +95,14 @@
 		display: flex;
 		border: solid 0.125rem var(--color-fg);
 		align-items: center;
+
+		&:has(.ntf__input[type='number']:user-invalid) {
+			border-color: var(--color-negative);
+
+			& .ntf__input[type='number'] {
+				color: var(--color-negative);
+			}
+		}
 	}
 
 	.ntf__fieldset {
@@ -122,10 +130,6 @@
 
 		&:focus {
 			background: var(--color-faded);
-		}
-
-		&:user-invalid {
-			background: var(--color-negative);
 		}
 
 		&::-webkit-outer-spin-button,
