@@ -6,8 +6,8 @@ export default defineConfig({
 	plugins: [
 		sveltekit(),
 		SvelteKitPWA({
-			registerType: 'autoUpdate', // Automatically registers and updates service worker
-			injectRegister: 'auto', // Injects the service worker registration script into the app
+			registerType: 'autoUpdate',
+			injectRegister: 'auto',
 			manifest: {
 				name: 'EMoM',
 				short_name: 'EMoM',

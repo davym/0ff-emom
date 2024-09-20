@@ -5,6 +5,7 @@
 	export let title: string = '';
 	export let onClose: Function = () => {};
 	let dialog: HTMLDialogElement;
+
 	$: if (dialog) {
 		if (showModal) {
 			dialog.showModal();
@@ -29,7 +30,6 @@
 		<div class="m__close">
 			<ButtonSection isFixedSize={true}>
 				<button
-					autofocus
 					on:click={handleDialogClose}
 					on:keypress={(e) => {
 						if (e.key === 'Escape') {
