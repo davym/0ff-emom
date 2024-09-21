@@ -207,7 +207,12 @@
 				duration={5000}
 				amount={200}
 				fallDistance="100vh"
-				colorArray={['#0ff', '#f0f', '#ff0', '#0ff']}
+				colorArray={[
+					'var(--color-accent-primary)',
+					'var(--color-accent-secondary)',
+					'var(--color-accent-tertiary)',
+					'var(--color-accent-primary)'
+				]}
 				disableForReducedMotion={true}
 			/>
 		</div>
