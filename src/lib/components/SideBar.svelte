@@ -47,9 +47,9 @@
 			<a href="/about" aria-label="About EMoM">
 				<Info height="37.5%" />
 			</a>
-			<!-- <a href="#">
+			<a href="https://0ff.dev/" target="_blank" rel="noopener">
 				<Hash height="37.5%" />
-			</a> -->
+			</a>
 		</ButtonSection>
 	</section>
 </div>
