@@ -9,7 +9,7 @@
 	<title>EMoM</title>
 	<meta
 		name="description"
-		content="An awesome & super simple “every minute on the minute” interval timer by #0FF"
+		content="An awesome & super simple “every minute on the minute” interval timer by #0ff"
 	/>
 </svelte:head>
 
