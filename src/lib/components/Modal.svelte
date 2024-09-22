@@ -56,7 +56,7 @@
 		border: 0.0625rem solid var(--color-fg);
 		background: var(--color-bg);
 		color: var(--color-fg);
-		position: relative;
+		position: fixed;
 		overflow-y: auto;
 		flex-direction: column;
 		margin: auto;
