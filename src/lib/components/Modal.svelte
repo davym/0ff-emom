@@ -51,11 +51,13 @@
 
 <style>
 	.m {
-		max-width: 37rem;
+		max-height: 90dvh;
+		width: min(37rem, 90vw);
 		border: 0.0625rem solid var(--color-fg);
 		background: var(--color-bg);
 		color: var(--color-fg);
-
+		position: relative;
+		overflow-y: auto;
 		flex-direction: column;
 		margin: auto;
 
@@ -77,6 +79,9 @@
 		display: flex;
 		height: var(--grid-size);
 		box-shadow: 0 0.0625rem 0 var(--color-fg);
+		background: var(--color-bg);
+		position: sticky;
+		top: 0;
 	}
 
 	.m__title {
